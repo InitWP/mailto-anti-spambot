@@ -1,0 +1,9 @@
+{
+	"name": "Mailto anti spambot",
+	"type": "module",
+	"version": "0.1.0",
+	"description": "Hide/obfuscate email adresses from Spam Bots using a shortcode",
+	"files": [
+		"mailto-anti-spambot.php"
+    ]
+}
