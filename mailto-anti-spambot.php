@@ -8,7 +8,7 @@
  *
  * @return string The obfuscated email address.
  */
-function TEXTDOMAIN_hide_email_shortcode( $atts , $content = null ) {
+function NAMESPACE_hide_email_shortcode( $atts , $content = null ) {
 
 	$a = shortcode_atts( array(
 		'mailto' => $content,
@@ -27,4 +27,4 @@ function TEXTDOMAIN_hide_email_shortcode( $atts , $content = null ) {
 
 	return '<a href="mailto:' . antispambot( $a['mailto'] ) . '" ' . $class . '>' . antispambot( $content ) . '</a>';
 }
-add_shortcode( 'email', 'TEXTDOMAIN_hide_email_shortcode' );
+add_shortcode( 'email', 'NAMESPACE_hide_email_shortcode' );
